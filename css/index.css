@@ -218,39 +218,92 @@ header a {
     font-size: 1.4rem;
   }
 }
-.skills {
+.mid-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+@media (max-width: 800px) {
+  .mid-section {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+}
+.mid-section .skills {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
 @media (max-width: 725px) {
-  .skills {
+  .mid-section .skills {
     align-items: center;
   }
 }
-.skills h2 {
+.mid-section .skills h2 {
   font-size: 3rem;
-  padding: 2rem 1rem;
+  padding: 2.5rem 0 3.2rem 0;
   float: left;
   width: 400px;
 }
 @media (max-width: 725px) {
-  .skills h2 {
+  .mid-section .skills h2 {
     text-align: center;
   }
 }
-.skills ul {
+.mid-section .skills ul {
   width: 400px;
   border: 1px solid black;
 }
 @media (max-width: 725px) {
-  .skills ul {
+  .mid-section .skills ul {
     text-align: center;
     max-width: 80%;
   }
 }
-.skills ul li {
+.mid-section .skills ul li {
   font-size: 1.6rem;
   border: 1px solid black;
   padding: 1rem;
+}
+.mid-section .work-history {
+  line-height: 2.2rem;
+  max-width: 600px;
+}
+@media (max-width: 1070px) {
+  .mid-section .work-history {
+    margin-right: 30px;
+  }
+}
+@media (max-width: 800px) {
+  .mid-section .work-history {
+    margin-right: 0;
+    margin-top: 40px;
+  }
+}
+.mid-section .work-history h1 {
+  font-size: 3rem;
+  text-align: center;
+  padding: 2.5rem 0 2rem 0;
+}
+.mid-section .work-history h2 {
+  font-size: 2.5rem;
+  padding: 2.2rem 0;
+}
+.mid-section .work-history h3 {
+  font-size: 1.6rem;
+  padding: 2px;
+}
+.mid-section .work-history ul {
+  margin-top: 20px;
+}
+.mid-section .work-history ul li {
+  font-size: 1.3rem;
+  padding: 10px;
+}
+.mid-section .work-history ul li:nth-child(odd) {
+  background: lightgray;
+}
+.mid-section .work-history ul li:nth-child(even) {
+  background: lightblue;
 }

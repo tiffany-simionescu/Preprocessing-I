@@ -227,41 +227,108 @@ header {
     }
   }
 }
-
-.skills {
+.mid-section {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  // flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 100%;
 
-  @media (max-width: 725px) {
+  @media (max-width: 800px) {
+    flex-direction: column-reverse;
     align-items: center;
+    text-align: center;
   }
 
-  h2 {
-    font-size: 3rem;
-    padding: 2rem 1rem;
-    float: left;
-    width: 400px;
+  .skills {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    // margin: auto 0;
 
     @media (max-width: 725px) {
-      text-align: center;
-    }
-  }
-
-  ul {
-    width: 400px;
-    border: 1px solid black;
-
-    @media (max-width: 725px) {
-      text-align: center;
-      max-width: 100% - 20px;
+      align-items: center;
     }
 
-    li {
-      font-size: 1.6rem;
+    h2 {
+      font-size: 3rem;
+      // padding: 2rem 1rem;
+      padding: 2.5rem 0 3.2rem 0;
+      float: left;
+      width: 400px;
+
+      @media (max-width: 725px) {
+        text-align: center;
+      }
+    }
+
+    ul {
+      width: 400px;
       border: 1px solid black;
-      // width: 400px;
-      padding: 1rem;
+
+      @media (max-width: 725px) {
+        text-align: center;
+        max-width: 100% - 20px;
+      }
+
+      li {
+        font-size: 1.6rem;
+        border: 1px solid black;
+        // width: 400px;
+        padding: 1rem;
+      }
+    }
+  }
+
+  .work-history {
+    line-height: 2.2rem;
+    max-width: 600px;
+    // padding-right: 20px;
+
+    @media (max-width: 1070px) {
+      margin-right: 30px;
+    }
+
+    @media (max-width: 800px) {
+      margin-right: 0;
+      margin-top: 40px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      text-align: center;
+      padding: 2.5rem 0 2rem 0;
+    }
+
+    h2 {
+      // font-size: 2rem;
+      font-size: 2.5rem;
+      padding: 2.2rem 0;
+      // text-align: right;
+    }
+
+    h3 {
+      font-size: 1.6rem;
+      padding: 2px;
+      // text-align: right;
+      // text-align: center;
+    }
+
+    ul {
+      margin-top: 20px;
+      // border-radius: 20px;
+
+      li {
+        font-size: 1.3rem;
+        padding: 10px;
+        // list-style-type: disc;
+
+        &:nth-child(odd) {
+          background: lightgray;
+        }
+        &:nth-child(even) {
+          background: lightblue;
+        }
+      }
     }
   }
 }
