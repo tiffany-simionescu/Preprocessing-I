@@ -137,6 +137,17 @@ body {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
+html body:before,
+body body:before {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background: -webkit-radial-gradient(top center, ellipse cover, rgba(177, 211, 211, 0.1) 0%, rgba(3, 70, 70, 0.2) 100%);
+}
 .container {
   display: flex;
   flex-flow: column wrap;
@@ -151,6 +162,7 @@ header a {
   text-decoration: none;
   font-size: 1.5rem;
   margin: 4.5rem;
+  color: #026466;
 }
 @media (max-width: 620px) {
   header a {
@@ -159,10 +171,14 @@ header a {
 }
 .intro {
   display: flex;
-  background-color: grey;
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.4), rgba(2, 100, 102, 0.8)), url(../images/mountain.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
   width: 100%;
   height: 500px;
   border-radius: 20px;
+  box-shadow: 5px 5px 20px gray;
 }
 @media (max-width: 725px) {
   .intro {
@@ -184,6 +200,7 @@ header a {
 }
 .intro .name-text {
   margin: auto 20px;
+  color: white;
 }
 @media (max-width: 725px) {
   .intro .name-text {
@@ -223,6 +240,7 @@ header a {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  color: #026466;
 }
 @media (max-width: 800px) {
   .mid-section {
@@ -306,22 +324,60 @@ header a {
   background: lightgray;
 }
 .mid-section .work-history ul li:nth-child(even) {
-  background: lightblue;
+  background: #47b8b8;
 }
 .contact {
-  text-align: center;
-  background-color: grey;
-  margin: 30px 0 0 0;
-  padding-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.4), rgba(2, 100, 102, 0.8)), url(../images/wolf.jpeg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  margin: 30px 0;
+  padding: 40px;
   border-radius: 20px;
+  color: white;
+  box-shadow: 5px 5px 20px gray;
 }
-.contact h2 {
+.contact .my-info {
+  margin: auto;
+}
+.contact .my-info h2 {
   font-size: 2.5rem;
-  padding: 2.2rem 0;
+  padding: 0 0 2.2rem 0;
 }
-.contact h3 {
+.contact .my-info h3 {
   font-size: 1.6rem;
   line-height: 3rem;
+}
+.contact .form {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 50%;
+}
+.contact .form h3 {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+.contact .form input {
+  margin-bottom: 1.5rem;
+  width: 80%;
+  padding: 0.5rem;
+  border-radius: 20px;
+}
+.contact .form textarea {
+  width: 80%;
+  height: 120px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+.contact .form a {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  padding: 8px 20px;
+  border-radius: 10px;
 }
 footer {
   display: flex;
@@ -340,7 +396,7 @@ footer ul li {
 }
 footer ul li a {
   text-decoration: none;
-  color: grey;
+  color: #026466;
 }
 footer p {
   margin: 20px 0;
