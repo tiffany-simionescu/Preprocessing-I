@@ -134,6 +134,40 @@ table {
   box-sizing: border-box;
 }
 
+// Variables
+@darkGreen: rgb(0, 58, 36);
+@lightGreen: rgb(0, 100, 80);
+@pink: rgb(176, 42, 77);
+
+// Mixins
+.h1 {
+  font-size: 3rem;
+  text-align: center;
+  padding: 2.5rem 0;
+}
+
+.h2 {
+  font-size: 2.5rem;
+  padding: 2.2rem 0;
+}
+
+.h3 {
+  font-size: 1.6rem;
+}
+
+.li {
+  &:nth-child(odd) {
+    background: rgb(255, 255, 255);
+    color: @pink;
+  }
+  &:nth-child(even) {
+    background: @lightGreen;
+    color: white;
+  }
+}
+
+// Start of CSS
+
 html,
 body {
   height: 100%;
@@ -173,11 +207,10 @@ header {
     text-decoration: none;
     font-size: 1.5rem;
     margin: 4.5rem;
-    // color: rgb(2, 100, 102);
-    color: rgb(176, 42, 77);
+    color: @pink;
 
     &:hover {
-      color: rgb(0, 100, 80);
+      color: @lightGreen;
     }
 
     @media (max-width: 620px) {
@@ -263,8 +296,7 @@ header {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  // color: rgb(2, 100, 102);
-  color: rgb(0, 58, 36);
+  color: @lightGreen;
 
   @media (max-width: 800px) {
     flex-direction: column-reverse;
@@ -285,20 +317,15 @@ header {
       margin: 1rem auto 3rem auto;
     }
 
-    h1 {
-      font-size: 3rem;
-      text-align: center;
-      padding: 2.5rem 0 2rem 0;
-    }
+    .h1();
 
     h2 {
-      font-size: 2.5rem;
-      padding: 2.2rem 0;
-      color: rgb(176, 42, 77);
+      .h2();
+      color: @pink;
     }
 
     h3 {
-      font-size: 1.6rem;
+      .h3();
       padding: 2px;
     }
 
@@ -308,106 +335,82 @@ header {
       li {
         font-size: 1.3rem;
         padding: 10px;
-
-        &:nth-child(odd) {
-          background: rgb(255, 255, 255);
-        }
-        &:nth-child(even) {
-          // background: rgb(71, 184, 184);
-          background: rgb(0, 100, 80);
-          color: white;
-        }
+        .li();
       }
     }
   }
+}
 
-  .skills {
-    display: flex;
-    flex-direction: column;
-    // align-items: center;
-    width: 400px;
-    margin: 0 auto;
+.skills {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 0 auto;
+
+  @media (max-width: 725px) {
+    align-items: center;
+  }
+
+  h1 {
+    .h1();
+  }
+
+  h2 {
+    .h2();
+    text-align: left;
+    color: @pink;
 
     @media (max-width: 725px) {
-      align-items: center;
-    }
-
-    h1 {
-      font-size: 3rem;
       text-align: center;
-      padding: 2.5rem 0 2rem 0;
-      // margin-top: 3rem;
+    }
+  }
+
+  h3 {
+    .h3();
+    padding: 0.5rem;
+    text-align: left;
+  }
+
+  p {
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+    margin: 20px 0;
+  }
+
+  ul {
+    width: 400px;
+    margin-top: 2.5rem;
+    margin-bottom: 4rem;
+
+    @media (max-width: 725px) {
+      text-align: center;
+      max-width: 100% - 20px;
     }
 
-    h2 {
-      font-size: 2.5rem;
-      padding: 2.5rem 0;
-      text-align: left;
-      color: rgb(176, 42, 77);
-
-      @media (max-width: 725px) {
-        text-align: center;
-      }
-    }
-
-    h3 {
+    li {
       font-size: 1.6rem;
-      padding: 0.5rem;
-      text-align: left;
+      padding: 1rem;
+      .li();
     }
+  }
 
-    p {
-      font-size: 1.3rem;
-      line-height: 2.3rem;
-      margin: 20px 0;
-    }
+  .lambda-list {
+    list-style: disc;
+    border: none;
+    padding-left: 20px;
+    column-count: 2;
+    column-gap: 20px;
 
-    ul {
-      width: 400px;
-      // border: 1px solid rgb(0, 100, 80);
-      margin-bottom: 4rem;
-
-      @media (max-width: 725px) {
-        text-align: center;
-        max-width: 100% - 20px;
-      }
-
-      li {
-        font-size: 1.6rem;
-        // border: 1px solid rgb(0, 100, 80);
-        padding: 1rem;
-
-        &:nth-child(odd) {
-          background: rgb(255, 255, 255);
-          color: rgb(176, 42, 77);
-        }
-        &:nth-child(even) {
-          // background: rgb(71, 184, 184);
-          background: rgb(0, 100, 80);
-          color: white;
-        }
-      }
-    }
-
-    .lambda-list {
-      list-style: disc;
+    li {
       border: none;
-      padding-left: 20px;
-      column-count: 2;
-      column-gap: 20px;
 
-      li {
-        border: none;
-
-        &:nth-child(odd) {
-          background: none;
-          color: rgb(0, 58, 36);
-        }
-        &:nth-child(even) {
-          // background: rgb(71, 184, 184);
-          background: none;
-          color: rgb(0, 58, 36);
-        }
+      &:nth-child(odd) {
+        background: none;
+        color: @pink;
+      }
+      &:nth-child(even) {
+        background: none;
+        color: @pink;
       }
     }
   }
@@ -442,16 +445,12 @@ header {
 
   .my-info {
     margin: auto;
-
     h1 {
-      font-size: 3rem;
-      text-align: center;
-      padding: 2.5rem 0 3.5rem 0;
+      .h1();
+      margin-bottom: 1.5rem;
     }
-
     h2 {
-      font-size: 2.5rem;
-      padding: 0 0 2rem 0;
+      .h2();
 
       @media (max-width: 500px) {
         font-size: 2rem;
@@ -462,14 +461,13 @@ header {
   .form {
     display: flex;
     margin-left: 2rem;
-    // margin: 0 auto;
 
     @media (max-width: 975px) {
       margin: 2rem auto 0 auto;
     }
 
     h3 {
-      font-size: 1.6rem;
+      .h3();
       line-height: 2.5rem;
     }
 
@@ -489,14 +487,14 @@ header {
 
     a {
       text-decoration: none;
-      color: black;
+      color: @darkGreen;
       background-color: white;
       padding: 8px 20px;
       border-radius: 10px;
       font-size: 1.3rem;
 
       &:hover {
-        background-color: rgb(176, 42, 77);
+        background-color: @pink;
         color: white;
       }
     }
@@ -520,10 +518,10 @@ footer {
 
       a {
         text-decoration: none;
-        color: rgb(0, 100, 80);
+        color: @lightGreen;
 
         &:hover {
-          color: rgb(176, 42, 77);
+          color: @pink;
         }
       }
     }
@@ -531,6 +529,6 @@ footer {
 
   p {
     margin: 20px 0;
-    color: rgb(0, 58, 36);
+    color: @darkGreen;
   }
 }

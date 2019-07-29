@@ -130,6 +130,26 @@ table {
 * {
   box-sizing: border-box;
 }
+.h1 {
+  font-size: 3rem;
+  text-align: center;
+  padding: 2.5rem 0;
+}
+.h2 {
+  font-size: 2.5rem;
+  padding: 2.2rem 0;
+}
+.h3 {
+  font-size: 1.6rem;
+}
+.li:nth-child(odd) {
+  background: #ffffff;
+  color: #b02a4d;
+}
+.li:nth-child(even) {
+  background: #006450;
+  color: white;
+}
 html,
 body {
   height: 100%;
@@ -243,7 +263,7 @@ header a:hover {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  color: #003a24;
+  color: #006450;
 }
 @media (max-width: 800px) {
   .mid-section {
@@ -256,6 +276,9 @@ header a:hover {
   line-height: 2.2rem;
   max-width: 500px;
   margin: 0 auto;
+  font-size: 3rem;
+  text-align: center;
+  padding: 2.5rem 0;
 }
 @media (max-width: 1070px) {
   .mid-section .work-history {
@@ -266,11 +289,6 @@ header a:hover {
   .mid-section .work-history {
     margin: 1rem auto 3rem auto;
   }
-}
-.mid-section .work-history h1 {
-  font-size: 3rem;
-  text-align: center;
-  padding: 2.5rem 0 2rem 0;
 }
 .mid-section .work-history h2 {
   font-size: 2.5rem;
@@ -290,87 +308,89 @@ header a:hover {
 }
 .mid-section .work-history ul li:nth-child(odd) {
   background: #ffffff;
+  color: #b02a4d;
 }
 .mid-section .work-history ul li:nth-child(even) {
   background: #006450;
   color: white;
 }
-.mid-section .skills {
+.skills {
   display: flex;
   flex-direction: column;
   width: 400px;
   margin: 0 auto;
 }
 @media (max-width: 725px) {
-  .mid-section .skills {
+  .skills {
     align-items: center;
   }
 }
-.mid-section .skills h1 {
+.skills h1 {
   font-size: 3rem;
   text-align: center;
-  padding: 2.5rem 0 2rem 0;
-}
-.mid-section .skills h2 {
-  font-size: 2.5rem;
   padding: 2.5rem 0;
+}
+.skills h2 {
+  font-size: 2.5rem;
+  padding: 2.2rem 0;
   text-align: left;
   color: #b02a4d;
 }
 @media (max-width: 725px) {
-  .mid-section .skills h2 {
+  .skills h2 {
     text-align: center;
   }
 }
-.mid-section .skills h3 {
+.skills h3 {
   font-size: 1.6rem;
   padding: 0.5rem;
   text-align: left;
 }
-.mid-section .skills p {
+.skills p {
   font-size: 1.3rem;
   line-height: 2.3rem;
   margin: 20px 0;
 }
-.mid-section .skills ul {
+.skills ul {
   width: 400px;
+  margin-top: 2.5rem;
   margin-bottom: 4rem;
 }
 @media (max-width: 725px) {
-  .mid-section .skills ul {
+  .skills ul {
     text-align: center;
     max-width: 80%;
   }
 }
-.mid-section .skills ul li {
+.skills ul li {
   font-size: 1.6rem;
   padding: 1rem;
 }
-.mid-section .skills ul li:nth-child(odd) {
+.skills ul li:nth-child(odd) {
   background: #ffffff;
   color: #b02a4d;
 }
-.mid-section .skills ul li:nth-child(even) {
+.skills ul li:nth-child(even) {
   background: #006450;
   color: white;
 }
-.mid-section .skills .lambda-list {
+.skills .lambda-list {
   list-style: disc;
   border: none;
   padding-left: 20px;
   column-count: 2;
   column-gap: 20px;
 }
-.mid-section .skills .lambda-list li {
+.skills .lambda-list li {
   border: none;
 }
-.mid-section .skills .lambda-list li:nth-child(odd) {
+.skills .lambda-list li:nth-child(odd) {
   background: none;
-  color: #003a24;
+  color: #b02a4d;
 }
-.mid-section .skills .lambda-list li:nth-child(even) {
+.skills .lambda-list li:nth-child(even) {
   background: none;
-  color: #003a24;
+  color: #b02a4d;
 }
 .contact {
   display: flex;
@@ -402,11 +422,12 @@ header a:hover {
 .contact .my-info h1 {
   font-size: 3rem;
   text-align: center;
-  padding: 2.5rem 0 3.5rem 0;
+  padding: 2.5rem 0;
+  margin-bottom: 1.5rem;
 }
 .contact .my-info h2 {
   font-size: 2.5rem;
-  padding: 0 0 2rem 0;
+  padding: 2.2rem 0;
 }
 @media (max-width: 500px) {
   .contact .my-info h2 {
@@ -440,7 +461,7 @@ header a:hover {
 }
 .contact .form a {
   text-decoration: none;
-  color: black;
+  color: #003a24;
   background-color: white;
   padding: 8px 20px;
   border-radius: 10px;
