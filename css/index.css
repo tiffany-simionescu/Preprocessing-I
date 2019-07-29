@@ -146,7 +146,7 @@ body body:before {
   z-index: -1;
   top: 0;
   left: 0;
-  background: -webkit-radial-gradient(top center, ellipse cover, rgba(177, 211, 211, 0.1) 0%, rgba(3, 70, 70, 0.2) 100%);
+  background: -webkit-radial-gradient(top center, rgba(227, 186, 244, 0.1) 0%, rgba(83, 68, 90, 0.2) 100%);
 }
 .container {
   display: flex;
@@ -162,7 +162,10 @@ header a {
   text-decoration: none;
   font-size: 1.5rem;
   margin: 4.5rem;
-  color: #026466;
+  color: #b02a4d;
+}
+header a:hover {
+  color: #006450;
 }
 @media (max-width: 620px) {
   header a {
@@ -171,7 +174,7 @@ header a {
 }
 .intro {
   display: flex;
-  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.4), rgba(2, 100, 102, 0.8)), url(../images/mountain.jpg);
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.4), rgba(0, 58, 36, 0.8)), url(../images/mountain-and-lake.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -184,7 +187,7 @@ header a {
   .intro {
     flex-direction: column;
     align-items: center;
-    height: 600px;
+    height: 700px;
   }
 }
 .intro .img {
@@ -240,7 +243,7 @@ header a {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  color: #026466;
+  color: #003a24;
 }
 @media (max-width: 800px) {
   .mid-section {
@@ -249,45 +252,10 @@ header a {
     text-align: center;
   }
 }
-.mid-section .skills {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-@media (max-width: 725px) {
-  .mid-section .skills {
-    align-items: center;
-  }
-}
-.mid-section .skills h2 {
-  font-size: 3rem;
-  padding: 2.5rem 0 3.2rem 0;
-  float: left;
-  width: 400px;
-}
-@media (max-width: 725px) {
-  .mid-section .skills h2 {
-    text-align: center;
-  }
-}
-.mid-section .skills ul {
-  width: 400px;
-  border: 1px solid black;
-}
-@media (max-width: 725px) {
-  .mid-section .skills ul {
-    text-align: center;
-    max-width: 80%;
-  }
-}
-.mid-section .skills ul li {
-  font-size: 1.6rem;
-  border: 1px solid black;
-  padding: 1rem;
-}
 .mid-section .work-history {
   line-height: 2.2rem;
-  max-width: 600px;
+  max-width: 500px;
+  margin: 0 auto;
 }
 @media (max-width: 1070px) {
   .mid-section .work-history {
@@ -296,8 +264,7 @@ header a {
 }
 @media (max-width: 800px) {
   .mid-section .work-history {
-    margin-right: 0;
-    margin-top: 40px;
+    margin: 1rem auto 3rem auto;
   }
 }
 .mid-section .work-history h1 {
@@ -308,6 +275,7 @@ header a {
 .mid-section .work-history h2 {
   font-size: 2.5rem;
   padding: 2.2rem 0;
+  color: #b02a4d;
 }
 .mid-section .work-history h3 {
   font-size: 1.6rem;
@@ -321,16 +289,94 @@ header a {
   padding: 10px;
 }
 .mid-section .work-history ul li:nth-child(odd) {
-  background: lightgray;
+  background: #ffffff;
 }
 .mid-section .work-history ul li:nth-child(even) {
-  background: #47b8b8;
+  background: #006450;
+  color: white;
+}
+.mid-section .skills {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 0 auto;
+}
+@media (max-width: 725px) {
+  .mid-section .skills {
+    align-items: center;
+  }
+}
+.mid-section .skills h1 {
+  font-size: 3rem;
+  text-align: center;
+  padding: 2.5rem 0 2rem 0;
+}
+.mid-section .skills h2 {
+  font-size: 2.5rem;
+  padding: 2.5rem 0;
+  text-align: left;
+  color: #b02a4d;
+}
+@media (max-width: 725px) {
+  .mid-section .skills h2 {
+    text-align: center;
+  }
+}
+.mid-section .skills h3 {
+  font-size: 1.6rem;
+  padding: 0.5rem;
+  text-align: left;
+}
+.mid-section .skills p {
+  font-size: 1.3rem;
+  line-height: 2.3rem;
+  margin: 20px 0;
+}
+.mid-section .skills ul {
+  width: 400px;
+  margin-bottom: 4rem;
+}
+@media (max-width: 725px) {
+  .mid-section .skills ul {
+    text-align: center;
+    max-width: 80%;
+  }
+}
+.mid-section .skills ul li {
+  font-size: 1.6rem;
+  padding: 1rem;
+}
+.mid-section .skills ul li:nth-child(odd) {
+  background: #ffffff;
+  color: #b02a4d;
+}
+.mid-section .skills ul li:nth-child(even) {
+  background: #006450;
+  color: white;
+}
+.mid-section .skills .lambda-list {
+  list-style: disc;
+  border: none;
+  padding-left: 20px;
+  column-count: 2;
+  column-gap: 20px;
+}
+.mid-section .skills .lambda-list li {
+  border: none;
+}
+.mid-section .skills .lambda-list li:nth-child(odd) {
+  background: none;
+  color: #003a24;
+}
+.mid-section .skills .lambda-list li:nth-child(even) {
+  background: none;
+  color: #003a24;
 }
 .contact {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.4), rgba(2, 100, 102, 0.8)), url(../images/wolf.jpeg);
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.4), rgba(0, 58, 36, 0.6)), url(../images/wolf.jpeg);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -340,21 +386,41 @@ header a {
   color: white;
   box-shadow: 5px 5px 20px gray;
 }
+@media (max-width: 975px) {
+  .contact {
+    flex-direction: column;
+  }
+}
+@media (max-width: 530px) {
+  .contact {
+    width: 98%;
+  }
+}
 .contact .my-info {
   margin: auto;
 }
+.contact .my-info h1 {
+  font-size: 3rem;
+  text-align: center;
+  padding: 2.5rem 0 3.5rem 0;
+}
 .contact .my-info h2 {
   font-size: 2.5rem;
-  padding: 0 0 2.2rem 0;
+  padding: 0 0 2rem 0;
 }
-.contact .my-info h3 {
-  font-size: 1.6rem;
-  line-height: 3rem;
+@media (max-width: 500px) {
+  .contact .my-info h2 {
+    font-size: 2rem;
+  }
 }
 .contact .form {
   display: flex;
-  flex-flow: column nowrap;
-  width: 50%;
+  margin-left: 2rem;
+}
+@media (max-width: 975px) {
+  .contact .form {
+    margin: 2rem auto 0 auto;
+  }
 }
 .contact .form h3 {
   font-size: 1.6rem;
@@ -362,12 +428,12 @@ header a {
 }
 .contact .form input {
   margin-bottom: 1.5rem;
-  width: 80%;
+  width: 400px;
   padding: 0.5rem;
   border-radius: 20px;
 }
 .contact .form textarea {
-  width: 80%;
+  width: 400px;
   height: 120px;
   border-radius: 20px;
   margin-bottom: 30px;
@@ -378,6 +444,11 @@ header a {
   background-color: white;
   padding: 8px 20px;
   border-radius: 10px;
+  font-size: 1.3rem;
+}
+.contact .form a:hover {
+  background-color: #b02a4d;
+  color: white;
 }
 footer {
   display: flex;
@@ -396,8 +467,12 @@ footer ul li {
 }
 footer ul li a {
   text-decoration: none;
-  color: #026466;
+  color: #006450;
+}
+footer ul li a:hover {
+  color: #b02a4d;
 }
 footer p {
   margin: 20px 0;
+  color: #003a24;
 }
