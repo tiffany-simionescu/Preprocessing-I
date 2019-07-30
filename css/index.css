@@ -208,7 +208,7 @@ header a:hover {
   .intro {
     flex-direction: column;
     align-items: center;
-    height: 700px;
+    height: 800px;
   }
 }
 .intro .img {
@@ -232,17 +232,19 @@ header a:hover {
   }
 }
 .intro .name-text h1 {
-  font-size: 5rem;
+  font-size: 10rem;
+  font-family: "Great Vibes", cursive;
 }
-@media (max-width: 775px) {
+@media (max-width: 880px) {
   .intro .name-text h1 {
-    font-size: 4rem;
-    line-height: 4rem;
+    font-size: 7rem;
+    line-height: 7rem;
   }
 }
 .intro .name-text h2 {
   font-size: 3rem;
   line-height: 5rem;
+  text-align: center;
 }
 @media (max-width: 880px) {
   .intro .name-text h2 {
@@ -252,7 +254,7 @@ header a:hover {
 }
 @media (max-width: 775px) {
   .intro .name-text h2 {
-    line-height: 4rem;
+    line-height: 6rem;
   }
 }
 .intro .name-text p {
