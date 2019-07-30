@@ -202,6 +202,7 @@ header a:hover {
   height: 500px;
   border-radius: 20px;
   box-shadow: 5px 5px 20px gray;
+  margin-bottom: 2rem;
 }
 @media (max-width: 725px) {
   .intro {
@@ -236,7 +237,7 @@ header a:hover {
 @media (max-width: 775px) {
   .intro .name-text h1 {
     font-size: 4rem;
-    margin-bottom: 1rem;
+    line-height: 4rem;
   }
 }
 .intro .name-text h2 {
@@ -245,13 +246,19 @@ header a:hover {
 }
 @media (max-width: 880px) {
   .intro .name-text h2 {
-    font-size: 2rem;
-    line-height: 3rem;
+    font-size: 2.5rem;
+    line-height: 7rem;
+  }
+}
+@media (max-width: 775px) {
+  .intro .name-text h2 {
+    line-height: 4rem;
   }
 }
 .intro .name-text p {
   margin-top: 30px;
   font-size: 1.8rem;
+  line-height: 2.5rem;
 }
 @media (max-width: 725px) {
   .intro .name-text p {
