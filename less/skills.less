@@ -1,0 +1,72 @@
+.skills {
+  .flex-direction(column);
+  width: 400px;
+  margin: 0 auto;
+
+  @media @tablet {
+    align-items: center;
+  }
+
+  h1 {
+    .h1();
+  }
+
+  h2 {
+    .h2();
+    text-align: left;
+    color: @pink;
+
+    @media @tablet {
+      text-align: center;
+    }
+  }
+
+  h3 {
+    .h3();
+    padding: 0.5rem;
+    text-align: left;
+  }
+
+  p {
+    .font-size(1.3rem, 2.3rem);
+    margin: 20px 0;
+  }
+
+  ul {
+    width: 400px;
+    margin-top: 2.5rem;
+    margin-bottom: 4rem;
+
+    @media @tablet {
+      text-align: center;
+      max-width: 100% - 20px;
+    }
+
+    li {
+      font-size: 1.6rem;
+      padding: 1rem;
+      .li();
+    }
+  }
+
+  .lambda-list {
+    list-style: disc;
+    border: none;
+    padding-left: 20px;
+    column-count: 2;
+    column-gap: 20px;
+
+    li {
+      border: none;
+
+      &:nth-child(odd) {
+        background: none;
+        color: @pink;
+      }
+      &:nth-child(even) {
+        background: none;
+        color: @pink;
+      }
+    }
+  }
+}

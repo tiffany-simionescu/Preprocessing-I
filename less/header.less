@@ -1,0 +1,49 @@
+html,
+body {
+  height: 100%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+
+  body:before {
+    content: " ";
+    .size(100%, 100%);
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: -webkit-radial-gradient(
+      top center,
+      rgba(227, 186, 244, 0.1) 0%,
+      rgba(83, 68, 90, 0.2) 100%
+    );
+  }
+}
+
+.container {
+  display: flex;
+  flex-flow: column wrap;
+  max-width: 100%;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  margin: 20px auto;
+
+  a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 4.5rem;
+    color: @pink;
+
+    &:hover {
+      color: @lightGreen;
+    }
+
+    @media @tablet {
+      margin: 1.8rem;
+    }
+  }
+}
