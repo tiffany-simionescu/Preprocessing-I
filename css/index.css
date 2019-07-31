@@ -187,7 +187,7 @@ header a {
 header a:hover {
   color: #006450;
 }
-@media (max-width: 620px) {
+@media (max-width: 800px) {
   header a {
     margin: 1.8rem;
   }
@@ -204,7 +204,7 @@ header a:hover {
   box-shadow: 5px 5px 20px gray;
   margin-bottom: 2rem;
 }
-@media (max-width: 725px) {
+@media (max-width: 800px) {
   .intro {
     flex-direction: column;
     align-items: center;
@@ -214,7 +214,7 @@ header a:hover {
 .intro .img {
   margin: auto 40px;
 }
-@media (max-width: 725px) {
+@media (max-width: 800px) {
   .intro .img {
     margin: 40px auto 0 auto;
   }
@@ -226,7 +226,7 @@ header a:hover {
   margin: auto 20px;
   color: white;
 }
-@media (max-width: 725px) {
+@media (max-width: 800px) {
   .intro .name-text {
     text-align: center;
   }
@@ -235,7 +235,7 @@ header a:hover {
   font-size: 10rem;
   font-family: "Great Vibes", cursive;
 }
-@media (max-width: 880px) {
+@media (max-width: 800px) {
   .intro .name-text h1 {
     font-size: 7rem;
     line-height: 7rem;
@@ -246,13 +246,13 @@ header a:hover {
   line-height: 5rem;
   text-align: center;
 }
-@media (max-width: 880px) {
+@media (max-width: 800px) {
   .intro .name-text h2 {
     font-size: 2.5rem;
     line-height: 7rem;
   }
 }
-@media (max-width: 775px) {
+@media (max-width: 500px) {
   .intro .name-text h2 {
     line-height: 6rem;
   }
@@ -262,7 +262,7 @@ header a:hover {
   font-size: 1.8rem;
   line-height: 2.5rem;
 }
-@media (max-width: 725px) {
+@media (max-width: 800px) {
   .intro .name-text p {
     margin-top: 10px;
     font-size: 1.4rem;
@@ -284,15 +284,10 @@ header a:hover {
 .mid-section .work-history {
   line-height: 2.2rem;
   max-width: 500px;
-  margin: 0 auto;
+  margin: 0 3rem 0 auto;
   font-size: 3rem;
   text-align: center;
   padding: 2.5rem 0;
-}
-@media (max-width: 1070px) {
-  .mid-section .work-history {
-    margin-right: 30px;
-  }
 }
 @media (max-width: 800px) {
   .mid-section .work-history {
@@ -329,7 +324,7 @@ header a:hover {
   width: 400px;
   margin: 0 auto;
 }
-@media (max-width: 725px) {
+@media (max-width: 800px) {
   .skills {
     align-items: center;
   }
@@ -345,7 +340,7 @@ header a:hover {
   text-align: left;
   color: #b02a4d;
 }
-@media (max-width: 725px) {
+@media (max-width: 800px) {
   .skills h2 {
     text-align: center;
   }
@@ -365,7 +360,7 @@ header a:hover {
   margin-top: 2.5rem;
   margin-bottom: 4rem;
 }
-@media (max-width: 725px) {
+@media (max-width: 800px) {
   .skills ul {
     text-align: center;
     max-width: 80%;
@@ -415,12 +410,12 @@ header a:hover {
   color: white;
   box-shadow: 5px 5px 20px gray;
 }
-@media (max-width: 975px) {
+@media (max-width: 800px) {
   .contact {
     flex-direction: column;
   }
 }
-@media (max-width: 530px) {
+@media (max-width: 500px) {
   .contact {
     width: 98%;
   }
@@ -445,11 +440,11 @@ header a:hover {
 }
 .contact .form {
   display: flex;
-  margin-left: 2rem;
+  margin: 2rem auto 0 2rem;
 }
-@media (max-width: 975px) {
+@media (max-width: 800px) {
   .contact .form {
-    margin: 2rem auto 0 auto;
+    margin: 0 auto;
   }
 }
 .contact .form h3 {
@@ -462,7 +457,7 @@ header a:hover {
   padding: 0.5rem;
   border-radius: 20px;
 }
-@media (max-width: 530px) {
+@media (max-width: 500px) {
   .contact .form input {
     width: 300px;
   }
@@ -473,7 +468,7 @@ header a:hover {
   border-radius: 20px;
   margin-bottom: 30px;
 }
-@media (max-width: 530px) {
+@media (max-width: 500px) {
   .contact .form textarea {
     width: 300px;
   }
