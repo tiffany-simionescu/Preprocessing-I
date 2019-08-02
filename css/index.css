@@ -235,7 +235,7 @@ header a:hover {
   font-size: 10rem;
   font-family: "Great Vibes", cursive;
 }
-@media (max-width: 800px) {
+@media (max-width: 880px) {
   .intro .name-text h1 {
     font-size: 7rem;
     line-height: 7rem;
@@ -457,7 +457,7 @@ header a:hover {
   padding: 0.5rem;
   border-radius: 20px;
 }
-@media (max-width: 500px) {
+@media (max-width: 880px) {
   .contact .form input {
     width: 300px;
   }
@@ -468,7 +468,7 @@ header a:hover {
   border-radius: 20px;
   margin-bottom: 30px;
 }
-@media (max-width: 500px) {
+@media (max-width: 880px) {
   .contact .form textarea {
     width: 300px;
   }
