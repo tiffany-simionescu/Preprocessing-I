@@ -1,0 +1,48 @@
+// Mixins
+.h1 {
+  font-size: 3rem;
+  text-align: center;
+  padding: 2.5rem 0;
+}
+
+.h2 {
+  font-size: 2.5rem;
+  padding: 2.2rem 0;
+}
+
+.h3 {
+  font-size: 1.6rem;
+}
+
+.li {
+  &:nth-child(odd) {
+    background: rgb(255, 255, 255);
+    color: @pink;
+  }
+  &:nth-child(even) {
+    background: @lightGreen;
+    color: white;
+  }
+}
+
+// Parametric Mixins
+
+.font-size(@font, @height) {
+  font-size: @font;
+  line-height: @height;
+}
+
+.flex-direction(@direction) {
+  display: flex;
+  flex-direction: @direction;
+}
+
+.flex-align(@direction, @align) {
+  flex-direction: @direction;
+  align-items: @align;
+}
+
+.size(@width, @height) {
+  width: @width;
+  height: @height;
+}

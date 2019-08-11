@@ -1,0 +1,43 @@
+.mid-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: @lightGreen;
+
+  @media @tablet {
+    .flex-align(column-reverse, center);
+    text-align: center;
+  }
+
+  .work-history {
+    line-height: 2.2rem;
+    max-width: 500px;
+    margin: 0 3rem 0 auto;
+
+    @media @tablet {
+      margin: 1rem auto 3rem auto;
+    }
+
+    .h1();
+
+    h2 {
+      .h2();
+      color: @pink;
+    }
+
+    h3 {
+      .h3();
+      padding: 2px;
+    }
+
+    ul {
+      margin-top: 20px;
+
+      li {
+        font-size: 1.3rem;
+        padding: 10px;
+        .li();
+      }
+    }
+  }
+}

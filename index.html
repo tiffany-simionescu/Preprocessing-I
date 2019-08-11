@@ -1,10 +1,17 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>My Resume</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/0a490dea59.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="css/index.css">
 
@@ -14,6 +21,139 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <div class="container">
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="#about">About</a>
+        <a href="https://tiffany-simionescu.github.io/portfolio-website/portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="intro">
+      <div class="img">
+        <img src="images/my-profile.jpg" width="350px" alt="Tiffany Simionescu">
+      </div>
+      <div class="name-text">
+        <h1>Tiffany Simionescu</h1>
+        <h2>Full Stack Web Developer</h2>
+        <p>I love learning about new design elements for website presence, and
+          innovative
+          ways to enhance my code.</p>
+      </div>
+    </section>
+
+    <div class="mid-section">
+      <section class="work-history" id="about">
+        <h1>Work History:</h1>
+        <h2>Loan Processing Clerk</h2>
+        <h3>Company Name: Advanced Cash Fast</h3>
+        <h3>Dates Employed: Oct 2012 – May 2013</h3>
+        <h3>Location: Fort Lauderdale, FL</h3>
+        <ul>
+          <li>Receive incoming calls from potential customers who would like to apply for advance payday loans.</li>
+          <li>Gather documentations for processing of loan application (i.e. social security, legal picture
+            identification,
+            financial bank statements, etc.) to determine eligibility.</li>
+          <li>Review all proper documentation per loan applicant and determine rejection or approval of loan
+            application.
+          </li>
+        </ul>
+        <br>
+
+        <h2>Graphic Designer</h2>
+        <h3>Company Name: Sketch It Graphics</h3>
+        <h3>Dates Employed: Feb 2010 – Oct 2012</h3>
+        <h3>Location: Hollywood, FL</h3>
+        <ul>
+          <li>Developed and edited customer designs for marketing and fashion purposes.</li>
+          <li>Used a wide variety of printers for clothing design and screen printing.</li>
+          <li>Sold products and services to potential customers.</li>
+          <li>Managed the company's finances: Accounts Payable, Accounts Receivable department.</li>
+          <li>Reconciliation of statements and developed reports for the Accounting Department.</li>
+        </ul>
+      </section>
+
+      <section class="skills">
+        <h1>My Technical Skills:</h1>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>LESS / SASS</li>
+          <li>Node.js</li>
+          <li>JavaScript</li>
+          <li>Git / Github</li>
+          <li>CLI</li>
+          <li>Photoshop</li>
+        </ul>
+        <h1>Education:</h1>
+        <h2>Lambda School</h2>
+        <h3>Field Of Study: Full Stack Web Development</h3>
+        <h3>Expected graduation: 2020</h3>
+
+        <p>Lambda School offers an immersive program that prepares you for a successful career in full stack web
+          development.Their curriculum focuses on the following areas:</p>
+
+        <ul class="lambda-list">
+          <li>Javascript</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Node</li>
+          <li>React</li>
+          <li>Python</li>
+          <li>Express</li>
+          <li>SQL</li>
+        </ul>
+      </section>
+    </div>
+
+    <section class="contact" id="contact">
+      <div class="my-info">
+        <h1>Contact Me</h1>
+        <h2>Tiffany Simionescu</h2>
+        <h2>tiffany.simionescu@gmail.com</h2>
+        <h2>(864) 222-3333</h2>
+      </div>
+
+      <div class=form>
+        <form>
+          <h3>First Name:</h3>
+          <input class="text" type="text" name="firstname">
+
+          <h3>Last Name:</h3>
+          <input class="text" type="text" name="lastname">
+
+          <h3>Email Address:</h3>
+          <input class="text" type="text" name="email">
+
+          <h3>Message</h3>
+          <textarea name="message"></textarea>
+          <br>
+
+          <a href="#">
+            Submit
+          </a>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <ul>
+        <li>
+          <a href="https://www.facebook.com/Tiffany-Simionescu-Full-Stack-Web-Developer-337217927229001/"
+            target="_blank" class="fab fa-facebook"></a>
+        </li>
+        <li>
+          <a href="https://github.com/tiffany-simionescu" target="_blank" class="fab fa-github"></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/tiffanysimionescu/" target="_blank" class="fab fa-linkedin"></a>
+        </li>
+      </ul>
+      <p>&copy; Copyright Tiffany Simionescu's Resume 2019</p>
+    </footer>
+  </div>
 </body>
+
 </html>
